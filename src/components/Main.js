@@ -34,7 +34,7 @@ const Main = () => {
     const testigos = [
         {
             img: guadalupe,
-            nombre: "Guadalupe",
+            nombre: "Guada",
             comentario: "Son los mejores"
         },
         {
@@ -61,7 +61,7 @@ const Main = () => {
                     <h1>Litle Lemon</h1>
                     <h2>Esmeraldas</h2>
                     <p>La mejor comida del mundo mundial, contamos con la experiencia de la abuela.</p>
-                    <button>Reservar Mesa</button>
+                    <button>RESERVAR MESA</button>
                 </div>
                 <figure><img src={pick1} width="100%"/></figure>
             </div>
@@ -70,16 +70,16 @@ const Main = () => {
         <section className="section2">
             <div className="specials">
                 <div className="specials-head">
-                    <h2>Especiales de la casa</h2>
+                    <h2>Especial de la casa</h2>
                     <button>Online Menu</button>
                 </div>
                 <div className="specials-items">
                     {items.map((item)=>(
                         <div className="item">
-                            <figure><img src={item.img}/></figure>
-                            <label><h2>{item.title}</h2><span>{item.price}</span></label>
+                            <figure><img src={item.img} width="100%"/></figure>
+                            <label className="item-price"><h2>{item.title}</h2><span>{item.price}</span></label>
                             <p>{item.description}</p>
-                            <label><span>Pedir a domicilio</span><img src={delivery} alt="delivery-logo"/></label>
+                            <label className="domicilio"><span>Pedir a domicilio</span><img src={delivery} alt="delivery-logo"/></label>
                         </div>
                     ))}
                 </div>
@@ -92,8 +92,8 @@ const Main = () => {
                 <div className="testigos">
                     {testigos.map((testigo)=>(
                         <div className="testimonio">
-                            <label><img src={testigo.img} alt="testigo-img"/><span>{testigo.nombre}</span></label>
-                            <p>{testigo.comentario}</p>
+                            <label><figure><img src={testigo.img} alt="testigo-img" width="100%"/></figure><span>{testigo.nombre}</span></label>
+                            <p>"{testigo.comentario}"</p>
                         </div>
                     ))}
                 </div>
@@ -110,8 +110,8 @@ const Main = () => {
                     </p>
                 </div>
                 <div className="about-img">
-                    <figure><img src={pick2} width="100%"/></figure>
-                    <figure><img src={pick3} width="100%"/></figure>
+                    <figure className="fig1"><img src={pick2} width="100%"/></figure>
+                    <figure className="fig2"><img src={pick3} width="100%"/></figure>
                 </div>
             </div>
         </section>
