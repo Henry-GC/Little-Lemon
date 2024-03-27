@@ -1,7 +1,7 @@
 import pick1 from "../image/restauranfood.jpg"
 import delivery from "../image/delivery.jpg"
 import ensalada from "../image/ensalada.jpg"
-import fritada from "../image/bruchetta.svg"
+import fritada from "../image/restauranfood.jpg"
 import parrillada from "../image/lemon dessert.jpg"
 import guadalupe from "../image/guadalupe.jpg"
 import ricardo from "../image/ricardo.jpg"
@@ -63,7 +63,7 @@ const Main = () => {
                     <p>La mejor comida del mundo mundial, contamos con la experiencia de la abuela.</p>
                     <button>RESERVAR MESA</button>
                 </div>
-                <figure><img src={pick1} width="100%"/></figure>
+                <figure><img src={pick1} width="100%" alt="alt"/></figure>
             </div>
         </section>
         
@@ -76,7 +76,7 @@ const Main = () => {
                 <div className="specials-items">
                     {items.map((item)=>(
                         <div className="item">
-                            <figure><img src={item.img} width="100%"/></figure>
+                            <figure><img src={item.img} width="100%" alt="alt"/></figure>
                             <label className="item-price"><h2>{item.title}</h2><span>{item.price}</span></label>
                             <p>{item.description}</p>
                             <label className="domicilio"><span>Pedir a domicilio</span><img src={delivery} alt="delivery-logo"/></label>
@@ -110,8 +110,8 @@ const Main = () => {
                     </p>
                 </div>
                 <div className="about-img">
-                    <figure className="fig1"><img src={pick2} width="100%"/></figure>
-                    <figure className="fig2"><img src={pick3} width="100%"/></figure>
+                    <figure className="fig1"><img src={pick2} width="100%" alt="alt"/></figure>
+                    <figure className="fig2"><img src={pick3} width="100%" alt="alt"/></figure>
                 </div>
             </div>
         </section>

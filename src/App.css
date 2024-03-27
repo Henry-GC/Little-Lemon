@@ -296,6 +296,12 @@ footer{
 .footer-link div ul{
   list-style: none;
 }
+.footer-link ul a:link{
+  color: #EDEFEE;
+}
+.footer-link ul a:visited{
+  color: #EDEFEE;
+}
 .footer-link div ul li{
   color: #EDEFEE;
 }
