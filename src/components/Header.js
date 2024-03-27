@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import logo from "../image/Logo.svg"
 
 const Header = () =>{
@@ -8,9 +9,9 @@ const Header = () =>{
                     <img src={logo}/>
                     <nav>
                         <ul>
-                            <li><a href="#">INICIO</a></li>
+                            <li><Link to="/">INICIO</Link></li>
                             <li><a href="#">MENU</a></li>
-                            <li><a href="#">RESERVAR</a></li>
+                            <li><Link to="/reservar">RESERVAR</Link></li>
                             <li><a href="#">NOSOTROS</a></li>
                             <li><a href="#">LOGIN</a></li>
                         </ul>
