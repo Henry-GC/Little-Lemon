@@ -37,12 +37,12 @@ const BookingForm = ({availableTimes,updatTimes}) => {
             <form>
                     <div className="data-colum">
                         <label htmlFor="nombre">Nombre</label>
-                        <input onChange={changeHandler} type="text" name="nombre" id="nombre" value={nombre}/>
+                        <input onChange={changeHandler} type="text" name="nombre" id="nombre" value={nombre} required/>
                     </div>
                     <div>
                         <div className="data-colum">
                             <label htmlFor="fecha">Fecha</label>
-                            <input onChange={changeHandler} type="date" name="fecha" id="fecha" value={fecha}/>
+                            <input onChange={changeHandler} type="date" name="fecha" id="fecha" value={fecha} required/>
                         </div>
                         <div className="data-colum">
                             <label htmlFor="hora">Hora</label>
@@ -54,11 +54,11 @@ const BookingForm = ({availableTimes,updatTimes}) => {
                         </div>
                         <div className="data-colum" id="asientos-container">
                             <label htmlFor="asientos">Asientos</label>
-                            <input onChange={changeHandler} type="number" id="asientos" name="asientos" min="1" max="10" placeholder="1" value={asientos}/>
+                            <input onChange={changeHandler} type="number" id="asientos" name="asientos" min="1" max="10" placeholder="1" value={asientos} required/>
                         </div>
                         <div className="data-colum">
                             <label>Preferencias</label>
-                            <select onChange={changeHandler} id="pref" name="pref" value={pref}>
+                            <select onChange={changeHandler} id="pref" name="pref" value={pref} required>
                                 <option></option>
                                 <option>Puerta de Entrada</option>
                                 <option>Cuarto de Baño</option>
