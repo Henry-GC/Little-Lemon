@@ -1,7 +1,11 @@
 a{
   text-decoration: none;
 }
-
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 /* HEADER */
 
 header{
@@ -260,6 +264,75 @@ header{
   z-index: 6;
   left: 10rem;
   top: 7rem;
+}
+
+/* RESERVE */
+
+.reserve-container{
+  display: flex;
+  justify-content: center;
+  height: 150vh;
+}
+.reserve{
+  display: flex;
+  flex-direction: column;
+  background-color: #495e57;
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  padding: 3rem 7rem;
+}
+.reserve h1{
+  align-self: center;
+  font-family: "Markazi Text";
+  color: #F4CE14;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.reserve form{
+  color: #EDEFEE;
+  font-family: "Karla";
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.reserve form div{
+  display: flex;
+  justify-content: space-between;
+}
+.reserve form input{
+  font-size: 2rem;
+  line-height: 1.5;
+  border-radius: 10px;
+}
+.reserve form select{
+  font-family: "Karla";
+  font-size: 1.5rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+.reserve form figure{
+  align-self: center;
+  width: 10rem;
+}
+.reserve form button{
+  align-self: center;
+  background-color: #F4CE14;
+  width: 40rem;
+  height: 4rem;
+  color: #495e57;
+  font-size: 2rem;
+  font-family: "Karla";
+  font-weight: 700;
+  border-radius: 16px;
+}
+.data-colum{
+  display: flex;
+  flex-direction: column;
+}
+#cvv-container{
+  justify-content: center;
 }
 
 /* FOOTER */
