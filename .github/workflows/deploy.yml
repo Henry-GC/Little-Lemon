@@ -17,7 +17,7 @@ jobs:
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -i private_key.pem ubuntu@${{ secrets.EC2_IP }} << 'EOF'
             cd /home/ubuntu/Little-Lemon
-            git pull origin main
+            git pull origin master
             docker-compose down
             docker-compose up -d --build
           EOF
